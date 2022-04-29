@@ -1,0 +1,139 @@
+const swisseph = require('swisseph')
+const NAKSHATRA = require('./nakshatra')
+const RASHI = require('./rashi')
+
+const LORD = [
+    {
+        name:'SUN',
+        SE_NUM:swisseph.SE_SUN,
+        dasaDuration:6,
+        nakshatra:[
+            NAKSHATRA.Krittika,
+            NAKSHATRA["Uttara Phalguni"],
+            NAKSHATRA["Uttara Aashada"]],
+        rashi:[RASHI.LEO],
+        drishti:[]
+    },
+    {
+        name:'MOON',
+        SE_NUM:swisseph.SE_MOON,
+        dasaDuration:10,
+        nakshatra:[
+            NAKSHATRA.Rohini,
+            NAKSHATRA.Hasta,
+            NAKSHATRA.Shravana
+        ],
+        rashi:[RASHI.CANCER],
+        drishti:[]
+    },
+    {
+        name:'MARS',
+        SE_NUM:swisseph.SE_MARS,
+        dasaDuration:7,
+        nakshatra:[
+            NAKSHATRA.Mrigashira,
+            NAKSHATRA.Chitra,
+            NAKSHATRA.Dhanishta
+        ],
+        rashi:[RASHI.ARIES,RASHI.SCORPIO],
+        drishti:[]
+    },
+    {
+        name:'JUPITER',
+        SE_NUM:swisseph.SE_JUPITER,
+        dasaDuration:16,
+        nakshatra:[
+            NAKSHATRA.Punarvasu,
+            NAKSHATRA.Vishakha,
+            NAKSHATRA["Purva Bhadrapada"]
+        ],
+        rashi:[RASHI.SAGITTARIUS,RASHI.PISCES],
+        drishti:[]
+    },
+    {
+        name:'SATURN',
+        SE_NUM:swisseph.SE_SATURN,
+        dasaDuration:19,
+        nakshatra:[
+            NAKSHATRA.Pushya,
+            NAKSHATRA.Anuradha,
+            NAKSHATRA["Uttara Bhadrapada"]
+        ],
+        rashi:[RASHI.CAPRICORN,RASHI.AQUARIUS],
+        drishti:[]
+    },
+    {
+        name:'MERCURY',
+        SE_NUM:swisseph.SE_MERCURY,
+        dasaDuration:17,
+        nakshatra:[
+            NAKSHATRA.Ashlesha,
+            NAKSHATRA.Jyestha,
+            NAKSHATRA.Revati
+        ],
+        rashi:[RASHI.GEMINI,RASHI.VIRGO],
+        drishti:[]
+    },
+    {
+        name:'VENUS',
+        SE_NUM:swisseph.SE_VENUS,
+        dasaDuration:17,
+        nakshatra:[
+            NAKSHATRA.Bharani,
+            NAKSHATRA["Purva Phalguni"],
+            NAKSHATRA["Purva Aashada"]
+        ],
+        rashi:[RASHI.TARUS,RASHI.LIBRA],
+        drishti:[]
+    },
+    {
+        name:'URANUS',
+        SE_NUM:swisseph.SE_URANUS,
+        dasaDuration:0,
+        nakshatra:[],
+        rashi:[],
+        drishti:[]
+    },
+    {
+        name:'NEPTUNE',
+        SE_NUM:swisseph.SE_NEPTUNE,
+        dasaDuration:0,
+        nakshatra:[],
+        rashi:[],
+        drishti:[]
+    },
+    {
+        name:'PLUTO',
+        SE_NUM:swisseph.SE_PLUTO,
+        dasaDuration:0,
+        nakshatra:[],
+        rashi:[],
+        drishti:[]
+    },
+    {
+        name:'RAHU',
+        SE_NUM:10,
+        dasaDuration:18,
+        nakshatra:[
+            NAKSHATRA.Ardra,
+            NAKSHATRA.Swati,
+            NAKSHATRA.Shatabhisha
+        ],
+        rashi:[],
+        drishti:[]
+    },
+    {
+        name:'KETU',
+        SE_NUM:11,
+        dasaDuration:7,
+        nakshatra:[
+            NAKSHATRA.Ashwini,
+            NAKSHATRA.Magha,
+            NAKSHATRA.Mula
+        ],
+        rashi:[],
+        drishti:[]
+    }
+]
+
+module.exports = LORD
